@@ -9,13 +9,24 @@ Ext.define('TestApp.view.main.MainController', {
 
     alias: 'controller.main',
 
+    requires: [
+        'TestApp.view.main.CRUDtable.UpdateDeleteWindow',
+        'TestApp.view.main.CRUDtable.CreateWindow'
+    ],
+
     onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+        var win = Ext.create({
+            xtype: 'updatedeletewindow',
+            record: record
+        });
+        win.show();
     },
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
+    onCreateClick: function () {
+        var win = Ext.create({
+            xtype: 'createwindow',
+            store: Ext.data.StoreManager.lookup('usersStore')
+        });
+        win.show();
     }
 });

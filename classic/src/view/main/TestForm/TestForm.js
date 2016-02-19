@@ -26,7 +26,7 @@ Ext.define('TestApp.view.main.TestForm.TestForm', {
     items: [
             {
                 fieldLabel: 'First Name',
-                name: 'firstName',
+                name: 'firstName'
             },
             {
                 fieldLabel: 'Last Name',
