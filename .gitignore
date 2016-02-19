@@ -43,7 +43,6 @@ crashlytics-build.properties
 fabric.properties
 
 .idea/
-.sencha/
 
 # EXT JS
 .architect
