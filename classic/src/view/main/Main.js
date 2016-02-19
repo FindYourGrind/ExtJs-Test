@@ -16,9 +16,9 @@ Ext.define('TestApp.view.main.Main', {
         'TestApp.view.main.MainController',
         'TestApp.view.main.MainModel',
         'TestApp.view.main.List',
-        'TestApp.view.main.OutlookView',
+        'TestApp.view.main.Outlook.OutlookView',
         'TestApp.view.main.EventsTest',
-        'TestApp.view.main.TestForm'
+        'TestApp.view.main.TestForm.TestForm'
     ],
 
     controller: 'main',

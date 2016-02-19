@@ -1,9 +1,9 @@
-Ext.define('TestApp.view.main.TextFiledWithButton', {
+Ext.define('TestApp.view.main.TestForm.TextFiledWithButton', {
 	extend: 'Ext.container.Container',
 	xtype: 'textfiledwithbutton',
 
     defaults: {
-        labelAlign: 'left',
+        labelAlign: 'left'
     },
 
 	//filed label

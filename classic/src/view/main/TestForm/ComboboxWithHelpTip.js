@@ -1,9 +1,9 @@
-Ext.define('TestApp.view.main.ComboboxWithHelpTip', {
+Ext.define('TestApp.view.main.TestForm.ComboboxWithHelpTip', {
 	extend: 'Ext.container.Container',
 	xtype: 'comboboxwithhelptip',
 
     requires: [
-        'TestApp.view.main.HelpTip'
+        'TestApp.view.main.TestForm.HelpTip'
     ],
 
     defaults: {

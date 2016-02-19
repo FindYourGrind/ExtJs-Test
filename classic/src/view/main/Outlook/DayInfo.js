@@ -1,4 +1,4 @@
-Ext.define('TestApp.view.main.DayInfo', {
+Ext.define('TestApp.view.main.Outlook.DayInfo', {
 
 	extend:'Ext.container.Container',
 	xtype: 'dayinfo',

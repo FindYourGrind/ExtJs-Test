@@ -1,4 +1,4 @@
-Ext.define('TestApp.view.main.HelpTip', {
+Ext.define('TestApp.view.main.TestForm.HelpTip', {
 	extend: 'Ext.container.Container',
 	xtype: 'helptip',
 

@@ -1,22 +1,22 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('TestApp.view.main.TestForm', {
+Ext.define('TestApp.view.main.TestForm.TestForm', {
     extend: 'Ext.container.Container',
     xtype: 'testform',
 
     requires: [
-        'TestApp.view.main.TextFiledWithSub',
-        'TestApp.view.main.TextFiledWithButton',
-        'TestApp.view.main.DateByThreeFiled',
-        'TestApp.view.main.ComboboxWithHelpTip',
-        'TestApp.view.main.Phone'
+        'TestApp.view.main.TestForm.TextFiledWithSub',
+        'TestApp.view.main.TestForm.TextFiledWithButton',
+        'TestApp.view.main.TestForm.DateByThreeFiled',
+        'TestApp.view.main.TestForm.ComboboxWithHelpTip',
+        'TestApp.view.main.TestForm.Phone'
     ],
 
     defaultType: 'textfield',
 
     defaults: {
-        width: 500,
+        width: 500
     },
 
     listeners: {

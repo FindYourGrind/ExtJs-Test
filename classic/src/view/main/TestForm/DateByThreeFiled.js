@@ -1,9 +1,9 @@
-Ext.define('TestApp.view.main.DateByThreeFiled', {
+Ext.define('TestApp.view.main.TestForm.DateByThreeFiled', {
 	extend: 'Ext.container.Container',
 	xtype: 'datebythreefiled',
 
     requires: [
-        'TestApp.view.main.HelpTip'
+        'TestApp.view.main.TestForm.HelpTip'
     ],
 
     defaults: {

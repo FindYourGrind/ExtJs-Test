@@ -1,4 +1,4 @@
-Ext.define('TestApp.view.main.TextFiledWithSub', {
+Ext.define('TestApp.view.main.TestForm.TextFiledWithSub', {
 	extend: 'Ext.container.Container',
 	xtype: 'textfiledwithsub',
 	

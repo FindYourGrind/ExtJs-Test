@@ -1,10 +1,10 @@
-Ext.define('TestApp.view.main.Phone', {
+Ext.define('TestApp.view.main.TestForm.Phone', {
 	extend: 'Ext.container.Container',
 	xtype: 'phone',
 
     requires: [
-        'TestApp.view.main.TextFiledWithSub',
-        'TestApp.view.main.HelpTip'
+        'TestApp.view.main.TestForm.TextFiledWithSub',
+        'TestApp.view.main.TestForm.HelpTip'
     ],
 
     defaults: {
