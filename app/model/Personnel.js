@@ -1,18 +1,14 @@
 /**
  * Created by itrambovetskyi on 19.02.2016.
  */
-Ext.define('Personnel', {
+Ext.define('TestApp.model.Personnel', {
     extend : 'Ext.data.Model',
-    idProperty:'name',
 
     fields: [
-        {name: 'name', email: 'email', phone: 'phone'}
+        {name: 'name', type: 'string'},
+        {name: 'email', type: 'string'},
+        {name: 'phone', type: 'string'}
     ],
-
-    validations : [{
-        type : 'presence',
-        field : 'email'
-    }],
 
     proxy: {
         type: 'memory',

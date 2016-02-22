@@ -7,26 +7,6 @@
 Ext.define('TestApp.view.main.MainController', {
     extend: 'Ext.app.ViewController',
 
-    alias: 'controller.main',
+    alias: 'controller.main'
 
-    requires: [
-        'TestApp.view.main.CRUDtable.UpdateDeleteWindow',
-        'TestApp.view.main.CRUDtable.CreateWindow'
-    ],
-
-    onItemSelected: function (sender, record) {
-        var win = Ext.create({
-            xtype: 'updatedeletewindow',
-            record: record
-        });
-        win.show();
-    },
-
-    onCreateClick: function () {
-        var win = Ext.create({
-            xtype: 'createwindow',
-            store: Ext.data.StoreManager.lookup('usersStore')
-        });
-        win.show();
-    }
 });
