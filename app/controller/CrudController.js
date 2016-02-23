@@ -41,6 +41,7 @@ Ext.define('TestApp.view.controller.CrudController', {
     onDeleteClick: function (grid, rowIndex) {
         var rec = grid.getStore().getAt(rowIndex);
         rec.store.remove(rec);
+        rec.store.sync();
     },
 
     onUserWindowOkClock: function (btn) {

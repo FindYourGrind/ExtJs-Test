@@ -3,7 +3,6 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
- 
 Ext.define('TestApp.Application', {
     extend: 'Ext.app.Application',
 
@@ -12,7 +11,7 @@ Ext.define('TestApp.Application', {
     stores: [
         // TODO: add global / shared stores here
     ],
- 
+
     launch: function () {
         Ext.tip.QuickTipManager.init();
     },

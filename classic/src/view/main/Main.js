@@ -16,6 +16,7 @@ Ext.define('TestApp.view.main.Main', {
         'TestApp.view.main.MainController',
         'TestApp.view.main.MainModel',
         'TestApp.view.main.CRUDtable.List',
+        'TestApp.view.main.ToDo.ToDoList',
         'TestApp.view.main.Outlook.OutlookView',
         'TestApp.view.main.EventsTest',
         'TestApp.view.main.TestForm.TestForm'
@@ -101,7 +102,7 @@ Ext.define('TestApp.view.main.Main', {
         title: 'Settings',
         iconCls: 'fa-cog',
         items: {
-            xtype: 'eventstest'
+            xtype: 'todolist'
         }
     }]
 });
