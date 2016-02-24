@@ -12,6 +12,32 @@ Ext.define('TestApp.view.main.ToDo.ToDoList', {
 
     title: 'ToDo Tasks',
 
+    header:{
+        titlePosition: 1,
+
+        items:[{
+            xtype: 'image',
+            src: 'http://sdtimes.com/wp-content/uploads/2014/09/todo-manager-icon.png',
+            width: 40,
+            height: 40,
+            margin: '0 5 0 5'
+        },{
+            xtype: 'image',
+            src: 'http://s1.iconbird.com/ico/2013/9/452/w512h5121380477032search.png',
+            width: 24,
+            height: 24,
+            margin: '5 5 5 5'
+        }, {
+            xtype: 'textfield',
+            name: 'searchField',
+            itemId: 'searchField',
+            hideLabel: true,
+            width: 200,
+            listeners: {
+                change: 'onTextFieldChange'
+            }
+        }]
+    },
     store: Ext.create('TestApp.store.ToDoTasks', {
         storeId: 'taskStore'
     }),
@@ -71,7 +97,8 @@ Ext.define('TestApp.view.main.ToDo.ToDoList', {
                 icon: 'https://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/128x128/DeleteRed.png',
                 width: 20,
                 height: 20,
-                tooltip: 'Delete'
+                tooltip: 'Delete',
+                handler: 'onClickDeleteButton'
             }]
         }
     ],

@@ -3,8 +3,10 @@
  */
 Ext.define('TestApp.view.main.ToDo.ToDoWindow', {
     extend: 'Ext.window.Window',
+
+    requires: ['TestApp.store.CategoryForToDoTask'],
+
     xtype: 'taskwindow',
-    controller: 'todoformcontroller',
 
     width: 400,
     minHeight: 300,
@@ -52,35 +54,33 @@ Ext.define('TestApp.view.main.ToDo.ToDoWindow', {
                     text: 'Ok',
                     reference: 'buttonOk'
                 },
-                {
-                    text: 'Close',
-                    reference: 'buttonClose'
-                }]
+                    {
+                        text: 'Close',
+                        reference: 'buttonClose'
+                    }]
             }],
 
             items: [
-                Ext.create('Ext.form.Panel', {
+                {
+                    xtype: 'form',
                     itemId: 'taskForm',
-                    requires: [ 'TestApp.store.CategoryForToDoTask' ],
+
                     defaultType: 'textfield',
-                    layout: [{
+                    layout: {
                         type: 'vbox',
                         align: 'stretch'
-                    }],
+                    },
                     items: [{
                         fieldLabel: 'Title',
-                        name: 'title',
-                        width: '100%'
+                        name: 'title'
                     }, {
                         xtype: 'textareafield',
                         grow: true,
                         fieldLabel: 'Task',
                         name: 'task',
-                        width: '100%',
                         height: 200
                     }, {
                         xtype: 'datefield',
-                        anchor: '100%',
                         fieldLabel: 'Start Date',
                         name: 'startDate',
                         format: 'd m Y',
@@ -88,7 +88,6 @@ Ext.define('TestApp.view.main.ToDo.ToDoWindow', {
                         value: new Date()
                     }, {
                         xtype: 'datefield',
-                        anchor: '100%',
                         fieldLabel: 'End Date',
                         name: 'endDate',
                         format: 'd m Y',
@@ -102,10 +101,9 @@ Ext.define('TestApp.view.main.ToDo.ToDoWindow', {
                         submitEmptyField: false,
                         store: Ext.create('TestApp.store.CategoryForToDoTask'),
                         displayField: 'name',
-                        name: 'category',
-                        width: '100%'
+                        name: 'category'
                     }]
-                })
+                }
             ]
         });
 

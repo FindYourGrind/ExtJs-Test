@@ -8,7 +8,7 @@ Ext.define('TestApp.view.main.TestForm.Phone', {
     ],
 
     defaults: {
-        labelAlign: 'left',
+        labelAlign: 'left'
     },
 
     // Title for help
